@@ -1,7 +1,14 @@
+##报文格式
+srcID：content
+dstID: content
+type:  content
+text:  content
+
+
 ###  1. id=0 代表服务器，id是dstId（下同）
-#### 1. type = 0 注册
+####  type = 0 注册
     pass,name
-#### 2. type = 1 登录
+####  type = 1 登录
     id,pass
 ####  type = 2 退出
     Null
