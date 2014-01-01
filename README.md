@@ -4,7 +4,7 @@ network
 network course group project
 
 + 1.应用层协议:
- * 参见message.org 
+ * 参见message.md 
 + 2.传输层协议: 
  *  tcp 
 + 3 架构:
