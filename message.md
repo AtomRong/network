@@ -4,6 +4,7 @@
     srcID：content   string
     dstID: content   string
     type:  content   int
+    time   content   string
     text:  content   dict(字典)
 
 ## 事件流程：[]中的内容是报文中包含的内容
