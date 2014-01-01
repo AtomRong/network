@@ -33,7 +33,7 @@
      服务器分别向在它所有在线好友发送该消息[广播内容]
     
      
-###  1. id=0 代表服务器，id是dstId（下同）
+###  1.clint to server: id=0 代表服务器，id是dstId（下同）
     type = 0 注册
     pass,name
     type = 1 登录
@@ -48,18 +48,32 @@
     id,msg
     type = 6 广播消息
     msg
-    type = 1000 心跳信息，确认，30s 一次
-
-### 2 id = 用户id
-    type = 0 系统通知
-    操作成功
-    type = 1 自身信息
-    id，pass，friends(id,ip)
-    type = 2 状态更新，某用户的ip 变了
-    id,property,new_content
-    type = 6 广播消息
+    type=7 回复加好友请求
+    text
+    type = 1000 心跳信息
+    
+### 2 server to client: id = 用户id
+    type = 101 系统通知
+    statecode
+    type = 102 自身信息
+    id，friends(id,name,ip,port,online)
+    type = 103 状态更新，某用户的ip 变了
+    friend(id,name,ip,port,online)
+    type = 104 广播消息
     msg
-  
+    type=105 离线信息
+    type=106 加好友请求
+    type=107 悄悄的删除好友
+    [id]
+    
+    
+### 3 P2P     
+    type=8 传文件请求
+    type=9 确认/否认
+    type=10 开始传送
+    
+    type=11 对话
+    
   
 
 ### 总结（考虑的问题）：
