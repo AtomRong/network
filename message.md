@@ -1,10 +1,12 @@
 ##报文格式
-### srcID：content
-### dstID: content
-### type:  content
-### text:  content
+ 报文是一个字典
+ key     value    value-type
+ srcID：content   string
+ dstID: content   string
+ type:  content   int
+ text:  content   dict(字典)
 
-## 事件流程[]中的内容是content
+## 事件流程：[]中的内容是报文中包含的内容
 
 ### 注册流程
      User向服务器发送注册请求[name，pass]
