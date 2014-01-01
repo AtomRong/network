@@ -1,4 +1,4 @@
-##  1. id=0 代表服务器，id是dstId（下同）
+###  1. id=0 代表服务器，id是dstId（下同）
 #### 1. type = 0 注册
     pass,name
 #### 2. type = 1 登录
