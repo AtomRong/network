@@ -11,8 +11,8 @@ network course group project
  * 用户之间 p2p
  * 用户与服务器 cs
  
-小组成员
--------
->dalewzm
->atomrong
->iff
+###小组成员
+
+> * dalewzm
+> * atomrong
+> * iff
