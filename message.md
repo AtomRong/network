@@ -1,10 +1,10 @@
 ##报文格式
- 报文是一个字典
- key     value    value-type
- srcID：content   string
- dstID: content   string
- type:  content   int
- text:  content   dict(字典)
+### 报文是一个字典
+    key     value    value-type
+    srcID：content   string
+    dstID: content   string
+    type:  content   int
+    text:  content   dict(字典)
 
 ## 事件流程：[]中的内容是报文中包含的内容
 
