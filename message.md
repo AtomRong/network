@@ -1,8 +1,8 @@
 ##报文格式
-srcID：content
-dstID: content
-type:  content
-text:  content
+### srcID：content
+### dstID: content
+### type:  content
+### text:  content
 
 
 ###  1. id=0 代表服务器，id是dstId（下同）
