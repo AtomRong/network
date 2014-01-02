@@ -11,5 +11,5 @@ def show(str):
        print '命令错误，请重新输入，或者help查询'
 
 
-def help():
+
     
