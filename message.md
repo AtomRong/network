@@ -36,31 +36,43 @@
 ###  1.clint to server: id=0 代表服务器，id是dstId（下同）
     type = 0 注册
     pass,name
+    
     type = 1 登录
     id,pass
+    
     type = 2 退出
     Null
+    
     type = 3 增加好友
     好友id
     type = 4 删除好友
     同上
+    
     type = 5 离线消息
     id,msg
     type = 6 广播消息
     msg
+    
     type=7 回复加好友请求
     text
+    type=12 回复删除好友请求，不能让用户知道
+    text
+    
     type = 1000 心跳信息
     
 ### 2 server to client: id = 用户id
     type = 101 系统通知
     statecode
+    
     type = 102 自身信息
     id，friends(id,name,ip,port,online)
+    
     type = 103 状态更新，某用户的ip 变了
     friend(id,name,ip,port,online)
+    
     type = 104 广播消息
     msg
+    
     type=105 离线信息
     type=106 加好友请求
     type=107 悄悄的删除好友
